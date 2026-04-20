@@ -1,0 +1,20 @@
+{
+  "name": "cosmos-pagination",
+  "version": "1.0.0",
+  "description": "Azure Function to get paginated investigations from Cosmos DB",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && func start",
+    "prestart": "npm run build"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^4.1.1",
+    "@azure/functions": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
